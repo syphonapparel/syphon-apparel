@@ -2,76 +2,85 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-white py-24"
+      className="bg-[#1A1A1A] py-24"
     >
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
 
         {/* Left Side */}
         <div>
-          <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+
+          <span className="rounded-full border border-[#00C853]/30 bg-[#00C853]/10 px-4 py-2 text-sm font-semibold text-[#00E676]">
             About Syphon Apparel
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
+          <h2 className="mt-6 text-4xl font-bold leading-tight text-white md:text-5xl">
             Manufacturing Apparel With
-            <span className="text-green-700"> Precision & Trust</span>
+            <span className="text-[#00C853]"> Precision & Trust</span>
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-400">
             Based in Sialkot, Pakistan, Syphon Apparel partners with
-            individuals, fashion brands, wholesalers, sports teams,
-            and global e-commerce businesses to manufacture premium
-            apparel with consistent quality, faster sampling,
-            transparent communication, and reliable worldwide shipping.
+            startups, fashion brands, wholesalers, sports teams and
+            global businesses to manufacture premium apparel with
+            reliable quality, transparent communication and worldwide
+            delivery.
           </p>
 
-          <div className="mt-10 grid gap-5">
+          <div className="mt-10 grid gap-4">
 
-            <div className="flex items-center gap-4">
-              <div className="text-2xl">✔</div>
-              <span className="text-lg font-medium">
+            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
+              <div className="text-2xl text-[#00C853]">✓</div>
+              <span className="font-medium text-white">
                 Premium Quality Manufacturing
               </span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="text-2xl">✔</div>
-              <span className="text-lg font-medium">
+            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
+              <div className="text-2xl text-[#00C853]">✓</div>
+              <span className="font-medium text-white">
                 Fast Product Sampling
               </span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="text-2xl">✔</div>
-              <span className="text-lg font-medium">
+            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
+              <div className="text-2xl text-[#00C853]">✓</div>
+              <span className="font-medium text-white">
                 Better Communication
               </span>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="text-2xl">✔</div>
-              <span className="text-lg font-medium">
+            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
+              <div className="text-2xl text-[#00C853]">✓</div>
+              <span className="font-medium text-white">
                 Worldwide Shipping
               </span>
             </div>
 
           </div>
+
         </div>
 
         {/* Right Side */}
-        <div className="flex h-[500px] items-center justify-center rounded-3xl bg-gradient-to-br from-green-100 to-white shadow-xl">
 
-          <div className="text-center">
-            <div className="text-7xl">🏭</div>
+        <div className="flex h-[500px] items-center justify-center rounded-3xl border border-zinc-800 bg-[#222222] shadow-2xl">
 
-            <h3 className="mt-6 text-3xl font-bold text-gray-900">
-              Factory Image
+          <div className="px-10 text-center">
+
+            <div className="mb-8 text-7xl">
+              👕
+            </div>
+
+            <h3 className="text-3xl font-bold text-white">
+              Product Showcase
             </h3>
 
-            <p className="mt-3 text-gray-600">
-              We'll replace this with a professional manufacturing
-              photograph in the next step.
+            <p className="mt-4 leading-7 text-gray-400">
+              This space will soon feature premium mockups and real
+              product photography of Syphon Apparel's collections,
+              including hoodies, t-shirts, tracksuits, racing wear,
+              and leather jackets.
             </p>
+
           </div>
 
         </div>
