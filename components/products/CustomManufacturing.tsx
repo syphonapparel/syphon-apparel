@@ -63,9 +63,12 @@ export default function CustomManufacturing() {
             manufacture products built around your exact vision.
           </p>
 
-          <button className="mt-8 rounded-full bg-[#00C853] px-10 py-4 text-lg font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#00E676]">
+          <a
+            href="#contact"
+            className="mt-8 inline-block rounded-full bg-[#00C853] px-10 py-4 text-lg font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#00E676]"
+          >
             Request a Quote
-          </button>
+          </a>
 
         </div>
 
