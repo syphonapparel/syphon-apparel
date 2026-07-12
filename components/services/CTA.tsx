@@ -26,13 +26,19 @@ export default function CTA() {
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
-          <button className="rounded-full bg-[#00C853] px-8 py-4 font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#00E676]">
+          <a
+            href="#contact"
+            className="rounded-full bg-[#00C853] px-8 py-4 font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#00E676]"
+          >
             Request a Quote
-          </button>
+          </a>
 
-          <button className="rounded-full border border-[#00C853] px-8 py-4 font-semibold text-[#00C853] transition-all duration-300 hover:bg-[#00C853] hover:text-black">
+          <a
+            href="#contact"
+            className="rounded-full border border-[#00C853] px-8 py-4 font-semibold text-[#00C853] transition-all duration-300 hover:bg-[#00C853] hover:text-black"
+          >
             Contact Us
-          </button>
+          </a>
 
         </div>
 
