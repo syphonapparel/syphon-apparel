@@ -33,7 +33,6 @@ export default function FooterContact() {
             +92 303 7192156
           </a>
         </div>
-
         <div>
           <p className="text-sm uppercase tracking-wider text-[#00C853]">
             Location
