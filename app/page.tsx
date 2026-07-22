@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import FloatingTrust from "@/components/FloatingTrust";
 import About from "@/components/About";
 
 import Products from "@/components/products/Products";
@@ -13,6 +14,8 @@ export default function Home() {
       <Navbar />
 
       <Hero />
+
+      <FloatingTrust />
 
       <About />
 

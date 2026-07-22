@@ -1,85 +1,143 @@
+import Image from "next/image";
+import {
+  MessageCircle,
+  BadgeCheck,
+  Layers3,
+  Globe2,
+} from "lucide-react";
+
+const promises = [
+  {
+    icon: MessageCircle,
+    title: "Transparent",
+    subtitle: "Communication",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Consistent",
+    subtitle: "Quality",
+  },
+  {
+    icon: Layers3,
+    title: "Flexible",
+    subtitle: "Manufacturing",
+  },
+  {
+    icon: Globe2,
+    title: "Reliable Worldwide",
+    subtitle: "Delivery",
+  },
+];
+
 export default function About() {
   return (
     <section
       id="about"
-      className="bg-[#1A1A1A] py-24"
+      className="relative z-10 overflow-hidden rounded-t-[40px] bg-[#F7F8FA] pt-28 pb-28 scroll-mt-28"
     >
-      <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+      <div className="mx-auto max-w-7xl px-6">
 
-        {/* Left Side */}
-        <div>
+        {/* Section Label */}
+        <p className="mb-12 text-sm font-semibold uppercase tracking-[0.35em] text-[#00C853]">
+          ABOUT
+        </p>
 
-          <span className="rounded-full border border-[#00C853]/30 bg-[#00C853]/10 px-4 py-2 text-sm font-semibold text-[#00E676]">
-            About Syphon Apparel
-          </span>
+        <div className="grid gap-14 lg:grid-cols-2 lg:items-start lg:gap-20">
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-white md:text-5xl">
-            Manufacturing Apparel With
-            <span className="text-[#00C853]"> Precision & Trust</span>
-          </h2>
+          {/* LEFT SIDE */}
+          <div>
 
-          <p className="mt-6 text-lg leading-8 text-gray-400">
-            Based in Sialkot, Pakistan, Syphon Apparel partners with
-            startups, fashion brands, wholesalers, sports teams and
-            global businesses to manufacture premium apparel with
-            reliable quality, transparent communication and worldwide
-            delivery.
-          </p>
+            <h2 className="text-4xl font-bold leading-tight text-[#111111] md:text-5xl">
+              Manufacturing Partnerships.
+              <br />
+              Not Just Products.
+            </h2>
 
-          <div className="mt-10 grid gap-4">
+            <div className="mt-8 max-w-2xl space-y-6 text-lg leading-8 text-gray-600">
 
-            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
-              <div className="text-2xl text-[#00C853]">✓</div>
-              <span className="font-medium text-white">
-                Premium Quality Manufacturing
-              </span>
+              <p>
+                Every successful clothing brand starts with a manufacturing
+                partner they can rely on.
+              </p>
+
+              <p>
+                At Syphon Apparel, exceptional manufacturing begins with
+                understanding your vision, followed by clear communication,
+                consistent quality, and meticulous attention to detail.
+              </p>
+
+              <p>
+                Whether you're launching your first collection or scaling an
+                established brand, we approach every project with the same
+                commitment to quality, transparency, and long-term
+                partnerships.
+              </p>
+
+              <div>
+                <p>
+                  From the first conversation to the final shipment, our goal
+                  is simple.
+                </p>
+
+                <h3 className="mt-3 text-2xl font-bold text-[#111111]">
+                  Make manufacturing feel effortless.
+                </h3>
+              </div>
+
             </div>
 
-            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
-              <div className="text-2xl text-[#00C853]">✓</div>
-              <span className="font-medium text-white">
-                Fast Product Sampling
-              </span>
-            </div>
+            {/* Promise Cards */}
+            <div className="mt-12 grid gap-4 sm:grid-cols-2">
 
-            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
-              <div className="text-2xl text-[#00C853]">✓</div>
-              <span className="font-medium text-white">
-                Better Communication
-              </span>
-            </div>
+              {promises.map((item) => {
+                const Icon = item.icon;
 
-            <div className="flex items-center gap-4 rounded-2xl border border-zinc-800 bg-[#222222] p-4 transition hover:border-[#00C853]">
-              <div className="text-2xl text-[#00C853]">✓</div>
-              <span className="font-medium text-white">
-                Worldwide Shipping
-              </span>
+                return (
+                  <div
+                    key={item.title}
+                    className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#00C853]/30 hover:shadow-xl"
+                  >
+
+                    <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#00C853]/10 text-[#00C853] transition-all duration-300 group-hover:bg-[#00C853] group-hover:text-white">
+
+                      <Icon size={22} />
+
+                    </div>
+
+                    <h4 className="text-base font-semibold text-[#111111]">
+                      {item.title}
+                    </h4>
+
+                    <p className="mt-1 text-sm text-gray-500">
+                      {item.subtitle}
+                    </p>
+
+                  </div>
+                );
+              })}
+
             </div>
 
           </div>
 
-        </div>
+          {/* RIGHT SIDE */}
+          <div className="relative lg:pt-14">
 
-        {/* Right Side */}
+            {/* Glow */}
+            <div className="absolute -right-10 top-8 h-56 w-56 rounded-full bg-[#00C853]/10 blur-3xl" />
 
-        <div className="flex h-[500px] items-center justify-center rounded-3xl border border-zinc-800 bg-[#222222] shadow-2xl">
+            <div className="overflow-hidden rounded-3xl border border-black/5 shadow-2xl">
 
-          <div className="px-10 text-center">
+              <Image
+                src="/images/factory-team.png"
+                alt="Syphon Apparel Manufacturing"
+                width={700}
+                height={850}
+                priority
+                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              />
 
-            <div className="mb-8 text-7xl">
-              👕
             </div>
-
-            <h3 className="text-3xl font-bold text-white">
-              Product Showcase
-            </h3>
-
-            <p className="mt-4 leading-7 text-gray-400">
-              This space will soon feature premium mockups and real
-              product photography of Syphon Apparel's collections,
-              including hoodies, t-shirts, tracksuits, racing wear,
-              and leather jackets.
-            </p>
 
           </div>
 

@@ -72,7 +72,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="rounded-3xl border border-zinc-800 bg-[#1A1A1A] p-10">
+    <div
+    id="quote-form"
+    className="rounded-3xl border border-zinc-800 bg-[#1A1A1A] p-10">
       <h3 className="text-3xl font-bold text-white">
         Request a Quote
       </h3>

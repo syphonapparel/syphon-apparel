@@ -7,7 +7,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          href="#"
+          href="#top"
           className="flex items-center gap-4 transition-opacity hover:opacity-90"
         >
           <Image
@@ -31,39 +31,39 @@ export default function Navbar() {
         </a>
 
         {/* Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center rounded-full border border-white/10 bg-white/5 p-1 md:flex">
 
           <a
-            href="#"
-            className="text-sm font-medium text-zinc-300 transition hover:text-[#00E676]"
+            href="#top"
+            className="rounded-full px-5 py-2 text-sm font-medium text-zinc-300 transition-all duration-300 hover:bg-white/10 hover:text-[#00E676]"
           >
             Home
           </a>
 
           <a
             href="#about"
-            className="text-sm font-medium text-zinc-300 transition hover:text-[#00E676]"
+            className="rounded-full px-5 py-2 text-sm font-medium text-zinc-300 transition-all duration-300 hover:bg-white/10 hover:text-[#00E676]"
           >
             About
           </a>
 
           <a
-            href="#services"
-            className="text-sm font-medium text-zinc-300 transition hover:text-[#00E676]"
-          >
-            Services
-          </a>
-
-          <a
             href="#products"
-            className="text-sm font-medium text-zinc-300 transition hover:text-[#00E676]"
+            className="rounded-full px-5 py-2 text-sm font-medium text-zinc-300 transition-all duration-300 hover:bg-white/10 hover:text-[#00E676]"
           >
             Products
           </a>
 
           <a
+            href="#services"
+            className="rounded-full px-5 py-2 text-sm font-medium text-zinc-300 transition-all duration-300 hover:bg-white/10 hover:text-[#00E676]"
+          >
+            Services
+          </a>
+
+          <a
             href="#contact"
-            className="text-sm font-medium text-zinc-300 transition hover:text-[#00E676]"
+            className="rounded-full px-5 py-2 text-sm font-medium text-zinc-300 transition-all duration-300 hover:bg-white/10 hover:text-[#00E676]"
           >
             Contact
           </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
           href="https://wa.me/923037192156"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-[#00C853] px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:scale-105 hover:bg-[#00E676]"
+          className="rounded-full bg-[#00C853] px-6 py-3 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#00E676]"
         >
           Get Quote
         </a>
